@@ -1,0 +1,38 @@
+# --- Ambiente virtual Python ---
+# Cada dev recria localmente com "python -m venv .venv"
+.venv/
+
+# --- Cache do Python ---
+# Gerado automaticamente ao rodar qualquer script .py; só lixo binário
+__pycache__/
+*.py[cod]
+
+# --- Jupyter ---
+# Checkpoints criados automaticamente a cada salvamento de notebook
+.ipynb_checkpoints/
+
+# --- Dados brutos ---
+# Arquivos do DataSUS podem ter centenas de MB; o Git não é um data lake
+data/raw/
+
+# --- Variáveis de ambiente ---
+# Senhas, tokens e chaves nunca entram no repositório
+.env
+.env.*
+
+# --- Windows ---
+# Arquivos de sistema criados pelo Explorer — sem valor no repo
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# --- Editores / IDEs e ferramentas locais ---
+# Configurações locais de cada desenvolvedor não pertencem ao projeto
+.vscode/
+.idea/
+.claude/
+
+# --- Dashboard Power BI ---
+# Arquivo binário (não tem diff útil) e pode passar de 50 MB.
+# O dashboard ficará acessível via link público do Power BI Service.
+dashboard/*.pbix
